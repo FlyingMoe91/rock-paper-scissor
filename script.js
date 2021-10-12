@@ -4,12 +4,16 @@ function computerPlay() {
   return pcChoice[Math.floor(Math.random() * pcChoice.length)];
 }
 
-function playerPlay() {
-  return pcChoice[Math.floor(Math.random() * pcChoice.length)];
-}
+  const computerSelection = computerPlay();
+  playerInput =prompt("Rock, Paper or Scissor? Choose wisely.");
+  playerInputLength = playerInput.length;
+  playerInputEnd = playerInput.slice(1, playerInputLength);
+  playerInputEndSmall = playerInputEnd.toLowerCase();
+  playerInputFirstLetter = playerInput[0];
+  playerInputFirstLetterBig = playerInputFirstLetter.toUpperCase();
+  const playerSelection = playerInputFirstLetterBig + playerInputEndSmall;
 
- const playerSelection = playerPlay();
- const computerSelection = computerPlay();
+console.log(playerSelection);
 
 function playRound() {
   if (playerSelection === computerSelection) {
@@ -23,6 +27,6 @@ function playRound() {
   }
 }
 
-console.log(playerSelection);
+//console.log(playerSelection);
 console.log(computerSelection);
 console.log(playRound())
