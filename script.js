@@ -30,7 +30,7 @@ function game() {
   let playerScore = 0;
   let computerScore = 0;
 
-  for (let round = 0; round < 3; round++) {
+  for (let round = 0; round < 5; round++) {
     let playround = playRound();
     console.log(playround);
 
