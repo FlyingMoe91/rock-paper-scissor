@@ -36,8 +36,9 @@ function game() {
 
     if(playround == `You Win this round! ${playerSelection} beats ${computerSelection}`) {
       playerScore++;
-    }else if(playround == `You lose this round! ${computerSelection} beats ${playerSelection}` ||
-             "Choice unknown"){
+    }else if(playround == `You lose this round! ${computerSelection} beats ${playerSelection}`){
+      computerScore++;
+    }else if(playround == "Choice unknown"){
       computerScore++;
     }
   console.log("Player: " + playerScore + "  || Computer: " + computerScore);
