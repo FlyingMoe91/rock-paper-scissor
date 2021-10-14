@@ -47,9 +47,9 @@ function game() {
   if(playerScore === computerScore) {
     console.log(`No Winner, No Loser. This game was a tie`)
   }else if(playerScore > computerScore) {
-    console.log(`Cangrats" You've won this game with ${playerScore}:${computerScore}`)
+    console.log(`Congrats" You've won this game with ${playerScore}:${computerScore}`)
   }else{
-    console.log( `That didn't went so well. You lose this game with ${playerScore}:${computerScore}`)
+    console.log( `That didn't go so well. You lose this game with ${playerScore}:${computerScore}`)
   }
 }
 
