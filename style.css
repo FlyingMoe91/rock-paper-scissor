@@ -1,0 +1,41 @@
+body {
+  border-radius: 20%;
+  background-color: dimgrey;
+  text-align: center;
+  color: white;
+}
+p {
+  font-size: 20px;
+}
+h1 {
+  font-size: 75px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.choices {
+  width: 430px;
+  display: flex;
+  justify-content: space-around;
+}
+.choices button {
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+.choices button:hover {
+  border: 2px solid lightgreen;
+}
+.choices img {
+  border-radius: 50%;
+  width: 120px;
+}
+#game {
+  font-size: 40px;
+}
+.animation {
+  border: 3px solid rgb(219, 103, 7);
+  transition: transform .5s ease;
+  transform: scale(1.3);
+}
